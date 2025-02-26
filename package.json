@@ -1,0 +1,21 @@
+{
+  "name": "subnet-dpn-contract-v3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpn",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.10",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.2.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.0",
+    "@openzeppelin/upgrades-core": "^1.42.1",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.19",
+    "jest": "^29.7.0"
+  }
+}
