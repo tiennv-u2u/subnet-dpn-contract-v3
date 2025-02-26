@@ -11,23 +11,23 @@ const U2U_TESTNET_RPC_URL = process.env.U2U_TESTNET_RPC_URL || "https://rpc-nebu
 
 const config: HardhatUserConfig = {
   networks: {
-    hardhat: {
-      accounts: {
-        count: 10,
-        accountsBalance: "10000000000000000000000" // 10000 ETH
-      }
-    },
+    // hardhat: {
+    //   accounts: {
+    //     count: 10,
+    //     accountsBalance: "10000000000000000000000" // 10000 ETH
+    //   }
+    // },
     nebulas: {
       chainId: 2484,
       url: U2U_TESTNET_RPC_URL,
       accounts: [`${PRIVATE_KEY}`],
-      // gas: 21000,
+      gas: 21000,
     },
     solaris: {
       chainId: 39,
       url: U2U_MAINNET_RPC_URL,
       accounts: [`${PRIVATE_KEY}`],
-      // gas: 21000,
+      gas: 21000,
     }
   },
   etherscan: {
@@ -63,7 +63,7 @@ const config: HardhatUserConfig = {
   mocha: {
     timeout: 40000
   },
-  solidity: "0.8.28",
+  solidity: "0.8.20",
 };
 
 export default config;
